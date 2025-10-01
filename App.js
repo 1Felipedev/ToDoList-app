@@ -5,7 +5,6 @@ export default function App() {
   const [tarefa, setTarefa] = useState('');
   const [tarefas, setTarefas] = useState([]);
 
-  // Função para adicionar tarefa
   const adicionarTarefa = () => {
     if (tarefa.trim() !== '') {
       setTarefas([...tarefas, { id: Date.now().toString(), texto: tarefa }]);
